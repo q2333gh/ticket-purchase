@@ -177,7 +177,7 @@ export APPIUM_SKIP_CHROMEDRIVER_INSTALL=true
 启动appium server并使用uiautomator2驱动
 
 ```shell
-appium --use-plugins uiautomator2
+appium --use-drivers uiautomator2
 ```
 
 启动成功将出现如下信息：

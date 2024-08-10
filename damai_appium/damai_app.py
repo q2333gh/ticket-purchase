@@ -18,12 +18,12 @@ from config import Config
 config = Config.load_config()
 
 device_app_info = AppiumOptions()
-# 操作系统
+# 操作系统 . some times ios
 device_app_info.set_capability('platformName', 'Android')
-# 操作系统版本
-device_app_info.set_capability('platformVersion', '10')
-# 设备名称
-device_app_info.set_capability('deviceName', 'YourDeviceName')
+# 操作系统版本. adb -s dabe9e71 shell getprop ro.build.version.release
+device_app_info.set_capability('platformVersion', '14')
+# 设备名称  adb devices -l PJD110 dabe9e71
+device_app_info.set_capability("deviceName", "dabe9e71")
 # app package
 device_app_info.set_capability('appPackage', 'cn.damai')
 # app activity name
